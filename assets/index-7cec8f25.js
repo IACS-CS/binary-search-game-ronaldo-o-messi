@@ -176,18 +176,22 @@ if (selection == "South America") {
     //custom error message (optional)
     );
     if (selection == "Dribbling")
-      ti.output("okay fatty butt" );  
+      ti.output("OKAYYYY YOU AREEEE NEYMAR" );
     if (selection == "Shooting")
-      ti.output("OKAYYYYYY YOU AREEE");
-ti.output("Neymar!!!");
+      ti.output("OKAYYYYYY YOU AREEE MESSI");
 }else {
   ti.output("Europe is always a great choice!");
-  const choices = ["speed", "vertical"];
-  await ti.readChoice(
+  const choices = ["Speed", "Vertical"];
+  let selection = await ti.readChoice(
     choices,
     //list of choices
     "Do you like Speed or Vertical",
     //promp (optional)
     "Please just say Speed or Vertical"
     //custom error message (optional)
-    );}
+  );
+  if (selection == "Speed")
+    ti.output("OKAAAY YOU ARE MBAPEE");
+  if (selection == "Vertical")
+    ti.output("OKAAAAY YOU ARE MOHAMED SALAH");
+}
