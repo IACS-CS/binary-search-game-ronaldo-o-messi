@@ -175,10 +175,23 @@ if (selection == "South America") {
     "Please just say Dribbling or Shooting"
     //custom error message (optional)
     );
-    if (selection == "Dribbling")
+    if (selection == "Dribbling") {
       ti.output("OKAYYYY YOU AREEEE NEYMAR" );
-    if (selection == "Shooting")
+      //Add Image of Neymar
+      ti.showImage(
+        "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg", // Image URL
+        "Neymar", // Alt text
+        { width: "200px", height: "auto", borderRadius: "10px", marginTop: "10px" } // Optional styles
+      );
+    }
+    if (selection == "Shooting") {
       ti.output("OKAYYYYYY YOU AREEE MESSI");
+      ti.showImage(
+        "https://upload.wikimedia.org/wikipedia/commons/1/18/Lionel-Messi-Argentina-2022-FIFA-World-Cup_sharpness.jpg" ,
+        "Messi" , // Alt text
+        { width: "200px", height: "auto", borderRadius: "10px", marginTop: "10px" } // Optional styles
+      );
+    }
 }else {
   ti.output("Europe is always a great choice!");
   const choices = ["Speed", "Vertical"];
@@ -190,8 +203,20 @@ if (selection == "South America") {
     "Please just say Speed or Vertical"
     //custom error message (optional)
   );
-  if (selection == "Speed")
+  if (selection == "Speed") {
     ti.output("OKAAAY YOU ARE MBAPEE");
-  if (selection == "Vertical")
+    ti.showImage(
+      "https://upload.wikimedia.org/wikipedia/commons/0/0a/Kylian_Mbappe_celebrating_-_March_2018.jpg", // Image URL
+      "Mbappe", // Alt text
+      { width: "200px", height: "auto", borderRadius: "10px", marginTop: "10px" } // Optional styles
+    );
+  }
+  if (selection == "Vertical"){
     ti.output("OKAAAAY YOU ARE MOHAMED SALAH");
+    ti.showImage(
+      "https://upload.wikimedia.org/wikipedia/commons/f/ff/Mo_Salah_in_UEFA_Super_Cup_2019.jpg", // Image URL
+      "Mohamed Salah", // Alt text
+      { width: "200px", height: "auto", borderRadius: "10px", marginTop: "10px" } // Optional styles
+    );
+}
 }
